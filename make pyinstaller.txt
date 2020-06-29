@@ -1,0 +1,24 @@
+pyinstaller -F --windowed  --add-data "../quarantineDatabase.db;." --hidden-import=babel.numbers ../quarantineStockManagementApp.py
+
+pyinstaller -F --windowed --hidden-import=babel.numbers ../quarantineStockManagementApp.py
+
+
+
+# final
+pyinstaller -F --hidden-import=babel.numbers ../quarantineStockManagementApp.py
+
+
+pyinstaller filename.spec
+
+import sys
+sys.setrecursionlimit(5000)
+
+#final
+
+pyinstaller --add-data="../appMainGui.ui;." --add-data="../loadConfiguration.ui;." --add-data="../saveConfiguration.ui;." --add-data="../configurationDB.db;." --hidden-import=babel.numbers --hidden-import=PySide2.QtXml --hidden-import=PySide2.QtUiTools ../main.py
+
+
+#make resourses
+C:\ProgramData\Anaconda3\Scripts\pyside2-rcc.exe appMainGui.qrc -o rc_appMainGui.py
+
+pyinstaller --add-data="../src/impactAssesment/impactAssesment.ui;impactAssesment" --add-data="../src/massBalance/massBalance.ui;massBalance" --add-data="../src/massBalance/massBalanceDataEntryDialog.ui;massBalance" --add-data="../src/energyAnalysis/energyAnalysis.ui;energyAnalysis" --add-data="../src/energyAnalysis/energyAnalysisDataEntryDialog.ui;energyAnalysis" --add-data="../src/exergyAnalysis/exergyAnalysis.ui;exergyAnalysis" --add-data="../src/exergyAnalysis/exergyAnalysisDataEntryDialog.ui;exergyAnalysis" --add-data="../src/start/start.ui;start" --add-data="../src/start/mainDatabase.db;start" --hidden-import=babel.numbers --hidden-import=PySide2.QtXml --hidden-import=PySide2.QtUiTools ../src/main.py
