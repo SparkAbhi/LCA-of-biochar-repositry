@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>LCA of Biochar</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="1">
@@ -145,6 +148,10 @@
           <property name="text">
            <string>Create</string>
           </property>
+          <property name="icon">
+           <iconset resource="../appMainGui.qrc">
+            <normaloff>:/icon/icon/create.png</normaloff>:/icon/icon/create.png</iconset>
+          </property>
          </widget>
         </item>
         <item>
@@ -152,12 +159,29 @@
           <property name="text">
            <string>Load</string>
           </property>
+          <property name="icon">
+           <iconset resource="../appMainGui.qrc">
+            <normaloff>:/icon/icon/load.png</normaloff>:/icon/icon/load.png</iconset>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QToolButton" name="toolButton">
           <property name="text">
-           <string>... Browse     </string>
+           <string>Browse   </string>
+          </property>
+          <property name="icon">
+           <iconset resource="../appMainGui.qrc">
+            <normaloff>:/icon/icon/browse.png</normaloff>:/icon/icon/browse.png</iconset>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>false</bool>
           </property>
          </widget>
         </item>
@@ -165,6 +189,10 @@
          <widget class="QPushButton" name="pushButton_3">
           <property name="text">
            <string>Save</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../appMainGui.qrc">
+            <normaloff>:/icon/icon/save.png</normaloff>:/icon/icon/save.png</iconset>
           </property>
          </widget>
         </item>
@@ -226,6 +254,9 @@
     <property name="title">
      <string>Analysis</string>
     </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
     <addaction name="actionMass_Balance"/>
     <addaction name="actionExergy_Analysis"/>
     <addaction name="actionEnergy_Analysis"/>
@@ -235,26 +266,44 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionMass_Balance">
+   <property name="icon">
+    <iconset resource="../appMainGui.qrc">
+     <normaloff>:/icon/icon/mass balance.png</normaloff>:/icon/icon/mass balance.png</iconset>
+   </property>
    <property name="text">
     <string>Mass Balance</string>
    </property>
   </action>
   <action name="actionExergy_Analysis">
+   <property name="icon">
+    <iconset resource="../appMainGui.qrc">
+     <normaloff>:/icon/icon/exergy.png</normaloff>:/icon/icon/exergy.png</iconset>
+   </property>
    <property name="text">
     <string>Exergy Analysis</string>
    </property>
   </action>
   <action name="actionEnergy_Analysis">
+   <property name="icon">
+    <iconset resource="../appMainGui.qrc">
+     <normaloff>:/icon/icon/energy.png</normaloff>:/icon/icon/energy.png</iconset>
+   </property>
    <property name="text">
     <string>Energy Analysis</string>
    </property>
   </action>
   <action name="actionImpact_Assesment">
+   <property name="icon">
+    <iconset resource="../appMainGui.qrc">
+     <normaloff>:/icon/icon/Analysis.png</normaloff>:/icon/icon/Analysis.png</iconset>
+   </property>
    <property name="text">
     <string>Impact Assesment</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../appMainGui.qrc"/>
+ </resources>
  <connections/>
 </ui>

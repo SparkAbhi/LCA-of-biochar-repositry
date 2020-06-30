@@ -1,12 +1,15 @@
 <RCC>
   <qresource prefix="icon">
+    <file>icon/Analysis.png</file>
+    <file>icon/energy.png</file>
+    <file>icon/exergy.png</file>
+    <file>icon/mass balance.png</file>
+    <file>icon/browse.png</file>
     <file>icon/clear.png</file>
     <file>icon/delete.png</file>
+    <file>icon/create.png</file>
     <file>icon/load.png</file>
     <file>icon/save.png</file>
-    <file>icon/applications-of-biochar.png</file>
-    <file>icon/biochar.jpg</file>
-    <file>icon/biochar_cycle.png</file>
     <file>icon/run.png</file>
   </qresource>
 </RCC>
