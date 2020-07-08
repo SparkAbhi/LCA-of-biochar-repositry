@@ -20,7 +20,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Energy Analysis Data Entry</string>
+   <string>Mass Balance Data Entry</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
    <item row="0" column="0">
@@ -692,7 +692,7 @@ background-position:center;</string>
                <item>
                 <widget class="QLabel" name="label_35">
                  <property name="text">
-                  <string>Gases(kg)(kg)</string>
+                  <string>Gases(kg)</string>
                  </property>
                 </widget>
                </item>

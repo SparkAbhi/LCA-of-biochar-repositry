@@ -20,7 +20,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Energy Analysis</string>
+   <string>Exergy Analysis</string>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
